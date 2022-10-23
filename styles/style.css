@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: #202C36;
+}
+
+header{
+    background-color: #2B3844;
+}
+.header_container{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #2B3844;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* SWITCH */
+.toggle{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/*Se crea el circulo dentro del switch cuando se presiona
+se crea con la pseudo clase after*/
+
+.toggle::after{
+    content: '';
+    position: absolute;
+    width:30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: black;
+    left: 5px;
+    top: 5px;
+    transition: all 0.8s;
+}
+input[type="checkbox"]:checked + .toggle::after{
+    transform: translateX(40px);
+    background-color: white;
+}
+
+input[type="checkbox"]:checked + .toggle{
+    background-color: black;
+}
+
+.hidden-input{
+    visibility: hidden;
+}
+
+/************GRID*************/
+
+
+.container{
+    min-height: 200vh;
+    padding: 40px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.box{
+    background-color: #2B3844;
+    border-radius: 14px;
+    width: 264px;
+    height: 336px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    cursor: pointer;
+}
+
+.box ul, h4{
+    padding: 10px 10px;
+}
+
+.facts{
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.flag{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px 14px 0px 0px;
+}
+
+input[type="text"]{
+    width: 480px;
+    height: 56px;
+    padding: 0px 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #2B3844;
+}

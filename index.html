@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Where in the world?</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header_container">
+                <h1 class="logo">WHERE IN THE WORLD?</h1>
+                <div class="container_switch">
+                    <input type="checkbox" id="switch" class="hidden-input" onclick="changeTheme()">
+                    <label for="switch" class="toggle"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <section class="bar_filter">
+            <input type="text" placeholder="Search for a country..." id="search_country">
+        </section>
+        <section class="container"></section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
